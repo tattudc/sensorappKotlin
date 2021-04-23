@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/xValue"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="xValue"
+        app:layout_constraintEnd_toStartOf="@+id/yValue"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/yValue"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="yValue"
+        app:layout_constraintEnd_toStartOf="@+id/zValue"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/xValue"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/zValue"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="zValue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/yValue"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/xGyroValue"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="xGyroValue"
+        app:layout_constraintEnd_toStartOf="@+id/yGyroValue"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/xValue" />
+
+    <TextView
+        android:id="@+id/yGyroValue"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="yGyroValue"
+        app:layout_constraintEnd_toStartOf="@+id/zGyroValue"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/xGyroValue"
+        app:layout_constraintTop_toBottomOf="@+id/yValue" />
+
+    <TextView
+        android:id="@+id/zGyroValue"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="zGyroValue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/yGyroValue"
+        app:layout_constraintTop_toBottomOf="@+id/zValue" />
+
+    <TextView
+        android:id="@+id/xMagnoValue"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="xMagnoValue"
+        app:layout_constraintEnd_toStartOf="@+id/yMagnoValue"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/xGyroValue" />
+
+    <TextView
+        android:id="@+id/yMagnoValue"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="yMagnoValue"
+        app:layout_constraintEnd_toStartOf="@+id/zMagnoValue"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/xMagnoValue"
+        app:layout_constraintTop_toBottomOf="@+id/yGyroValue" />
+
+    <TextView
+        android:id="@+id/zMagnoValue"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="zMagnoValue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/yMagnoValue"
+        app:layout_constraintTop_toBottomOf="@+id/zGyroValue" />
+
+    <TextView
+        android:id="@+id/lightValue"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="lightValue"
+        app:layout_constraintEnd_toStartOf="@+id/pressureValue"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/xMagnoValue" />
+
+    <TextView
+        android:id="@+id/pressureValue"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="pressureValue"
+        app:layout_constraintEnd_toStartOf="@+id/temp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/lightValue"
+        app:layout_constraintTop_toBottomOf="@+id/yMagnoValue" />
+
+    <TextView
+        android:id="@+id/temp"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="tempValue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/pressureValue"
+        app:layout_constraintTop_toBottomOf="@+id/zMagnoValue" />
+
+    <TextView
+        android:id="@+id/humiValue"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="humiValue"
+        app:layout_constraintEnd_toEndOf="@+id/lightValue"
+        app:layout_constraintStart_toStartOf="@+id/lightValue"
+        app:layout_constraintTop_toBottomOf="@+id/lightValue" />
+
+    <TextView
+        android:id="@+id/proxValue"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="proxValue"
+        app:layout_constraintBottom_toBottomOf="@+id/humiValue"
+        app:layout_constraintEnd_toEndOf="@+id/pressureValue"
+        app:layout_constraintStart_toStartOf="@+id/pressureValue"
+        app:layout_constraintTop_toTopOf="@+id/humiValue" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
